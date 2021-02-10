@@ -10,5 +10,18 @@
     a:focus {
         text-decoration: none;
         color: $color-white;
+        
     }
+
+    p{
+        @include respond(tab-port) {
+            flex-direction: column;
+            margin-top: 1.2rem;
+         }
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        padding: 2.2rem 5rem;
+     }
 }

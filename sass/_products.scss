@@ -1,9 +1,19 @@
 .products {
     padding: 8rem 14rem 2rem;
+
     
     display: flex;
     justify-content: space-between;
 
     flex-wrap: wrap;
+
+    @include respond(tab-port) {
+       
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 8rem 5rem 2rem;
+       
+    }
     
 }

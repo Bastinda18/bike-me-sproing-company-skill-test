@@ -1,6 +1,10 @@
 .contacts{
 
     padding: 2rem 14rem 0;
+
+    @include respond(tab-port) {
+        padding: 2rem 5rem 0;
+     }
     
     h2{
    
@@ -12,6 +16,11 @@
     &-content{
         margin-top: -2.8rem;
         display: flex;
+        height:100% ;
+
+        @include respond(phone) {
+            margin-top: 0;
+         }
 
         &_main{
             margin-top: 6rem;
@@ -21,7 +30,13 @@
             flex-direction: column;
             justify-content: space-between;
 
-            
+            @include respond(tab-port) {
+                justify-content: space-evenly;
+                
+             }
+             @include respond(phone) {
+                margin-top: 0;
+             }
 
             h3{
                 margin-top: 3rem;
@@ -51,6 +66,8 @@
                 display: block;
                
                 margin-bottom: 2.5rem;
+
+                
                 
         
                 &:focus {
@@ -71,7 +88,14 @@
           
         }
     }
-  
+
+    &_img{
+        @include respond(tab-port) {
+       
+            display: none;
+         }
+    }
+    
 }
 
 

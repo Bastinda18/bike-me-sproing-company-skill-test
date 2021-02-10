@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.8rem; }
+
+.container {
+  display: grid;
+  grid-template-rows: 60vh repeat(4, min-content); }
+
+.heading-primary {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 700; }
+
+.header {
+  background-color: orchid; }
+
+.blog {
+  background-color: yellow; }
+
+.contacts {
+  background-color: blue; }
+
+.products {
+  background-color: orangered; }
+
+.footer {
+  background-color: #000; }

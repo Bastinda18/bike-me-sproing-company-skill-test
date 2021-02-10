@@ -1,0 +1,41 @@
+// COLOR VARIABLES
+$color-primary:#D21B1B;
+$color-primary-dark: #D81000;
+
+$color-grey-light: #f7f7f7;
+
+$color-grey-dark: #707070;
+
+$color-white: #fff;
+
+$color-black: #000;
+
+// FONT VARIABLES
+$font-primary: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding:0;
+box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px =62.5% --> 1rem =10px
+}
+
+body{
+    font-family: $font-primary;
+    background-color: $color-white;
+    color: $color-black;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60vh repeat(4, min-content);
+}
+
